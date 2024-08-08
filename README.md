@@ -1,6 +1,6 @@
 # FastAPI + PostgreSQL Template
-![Static Badge](https://img.shields.io/badge/python-3.11.9-brightgreen?style=flat&logo=python)
-![Static Badge](https://img.shields.io/badge/fastapi-0.112.0-brightgreen?style=flat&logo=django)
+![Static Badge](https://img.shields.io/badge/python-...-brightgreen?style=flat&logo=python)
+![Static Badge](https://img.shields.io/badge/fastapi-...-brightgreen?style=flat&logo=python)
 ![Static Badge](https://img.shields.io/badge/coverage-0%-red?style=flat&logo=pytest)
 ![Static Badge](https://img.shields.io/badge/tests-failing-red?style=flat&logo=pytest)
 ![Static Badge](https://img.shields.io/badge/flake8-failing-red?style=flat&logo=python)
@@ -146,12 +146,11 @@ docker compose
 * `JSON-log-formatter (...)` — библиотека для форматирования логов в JSON-формате
 * `dependency-injector (...)` — библиотека для внедрения зависимостей (DI)
 * `pytest (...)` — библиотека для тестирования
-* `pytest-django (...)` — библиотека для тестирования Django-приложений через pytest
 * `pytest-cov (...)` — библиотека для оценки покрытия кода тестами через pytest
 * `pytest-mock (...)` — библиотека для мока зависимостей через pytest
 * `pytest-timeout (...)` — библиотека для ограничения времени выполнения тестов через pytest 
 * `pytest-asyncio (...)` — библиотека для тестирования асинхронного кода
-* `concurrent-log-handler (...)` — библиотека для последовательной записи логов в файлы при запуске веб приложения через несколько воркеров (как в gunicorn)
+* `concurrent-log-handler (...)` — библиотека для последовательной записи логов в файлы при запуске веб приложения через несколько воркеров (как в uvicorn)
 * `mypy (...)` — статический анализатор типов
 * `flake8 (...)` — инструмент линтинга для Python
 * `black (...)` — библиотека для форматирования кода на языке Python
