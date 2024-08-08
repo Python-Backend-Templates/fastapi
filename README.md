@@ -1,7 +1,7 @@
 # FastAPI + PostgreSQL Template
 ![Static Badge](https://img.shields.io/badge/python-3.11.9-brightgreen?style=flat&logo=python)
 ![Static Badge](https://img.shields.io/badge/fastapi-0.112.0-brightgreen?style=flat&logo=django)
-![Static Badge](https://img.shields.io/badge/coverage-0%%25-red?style=flat&logo=pytest)
+![Static Badge](https://img.shields.io/badge/coverage-0%-red?style=flat&logo=pytest)
 ![Static Badge](https://img.shields.io/badge/tests-failing-red?style=flat&logo=pytest)
 ![Static Badge](https://img.shields.io/badge/flake8-failing-red?style=flat&logo=python)
 ![Static Badge](https://img.shields.io/badge/mypy-failing-red?style=flat&logo=python)
