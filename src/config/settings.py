@@ -17,3 +17,5 @@ LOGGING_BACKUP_COUNT = int(os.environ.get("LOGGING_BACKUP_COUNT", 1))
 LOGGING_LOGGERS = os.environ.get("LOGGING_LOGGERS", "").split(",")
 LOGGING_SENSITIVE_FIELDS = os.environ.get("LOGGING_SENSITIVE_FIELDS", "").split(",")
 LOGGING_PATH = os.environ.get("LOG_PATH")
+
+PORT = os.environ.get("ASGI_PORT")

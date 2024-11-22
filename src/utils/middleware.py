@@ -15,7 +15,7 @@ requests_logger = logging.getLogger("requests")
 
 
 def headers_from_scope(scope: Scope) -> Dict:
-    return dict((k.decode().lower(), v.decode()) for k, v in scope["headers"])
+    return dict((k.decode().lower(), v.decode()) for k, v in scope.get("headers", {}))
 
 
 class TranslationMiddleware:

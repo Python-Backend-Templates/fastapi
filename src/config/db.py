@@ -39,27 +39,27 @@ class Database:
     async def session(self) -> AsyncIterator[AsyncSession]:
         session: AsyncSession = self._session_factory()
         try:
-            print("YIELDING...")
+            logging.debug("YIELDING...")
             yield session
         except Exception as e:
-            print("ROLLBACKING... ")
+            logging.debug("ROLLBACKING... ")
             await session.rollback()
-            print("ERROR... ", str(e))
+            logging.debug("ERROR... ", str(e))
             logger.error(
                 f"Session rollback because of exception - {str(e)}", exc_info=e
             )
             raise
         else:
-            print("COMMITTING... ")
+            logging.debug("COMMITTING... ")
             try:
                 await session.commit()
             except SQLAlchemyError as e:
-                print("ERROR COMMITTING...", str(e))
+                logging.debug("ERROR COMMITTING...", str(e))
                 await session.rollback()
                 logger.error(
                     f"Session rollback because of exception on commit - {str(e)}",
                     exc_info=e,
                 )
         finally:
-            print("CLOSING... ")
+            logging.debug("CLOSING... ")
             await session.close()
